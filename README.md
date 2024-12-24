@@ -1,6 +1,8 @@
 # NANPA API Client
 
-![](./.screens/nanpa.png)
+<p align="center">
+  <img src="./.screens/nanpa.png">
+</p>
 
 A Python client for interacting with the North American Numbering Plan Administration (NANPA) public API system.
 
