@@ -10,7 +10,7 @@ with open('README.md', encoding='utf-8') as fh:
 
 setup(
 	name='nanpa',
-	version='1.0.0',
+	version='1.0.1',
 	author='acidvegas',
 	author_email='acid.vegas@acid.vegas',
 	description='North American Numbering Plan Administration (NANPA) API Client',
