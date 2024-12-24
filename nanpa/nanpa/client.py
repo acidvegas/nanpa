@@ -14,7 +14,6 @@ class NanpaAPI:
 
         self.base_url = 'https://api.nanpa.com/reports/public'
 
-
     def _make_request(self, endpoint: str, params: dict = None) -> dict:
         '''
         Make a request to the NANPA API.
@@ -48,6 +47,7 @@ class NanpaAPI:
         
         :param npa: Area code to lookup
         '''
+
         params = {'npa': npa}
 
         return self._make_request('npa/areaCodeListing', params)
@@ -71,6 +71,7 @@ class NanpaAPI:
         
         :param state: Two-letter state code
         :param npa: Area code
+
         '''
 
         params = {'state': state, 'npa': npa}
@@ -190,14 +191,16 @@ class NanpaAPI:
         :param npa: Area code
         :param report_type: Report type (default: AS)
         '''
-        
+
         params = {'state': state, 'npa': npa, 'reportType': report_type}
+
         return self._make_request('tbco/thousandsBlocks', params)
 
 
 
 def main():
     '''Example usage of the NANPA API client.'''
+
     client = NanpaAPI()
     
     # Example API calls

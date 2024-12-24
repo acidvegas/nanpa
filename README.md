@@ -6,6 +6,19 @@ The North American Numbering Plan *(NANP)* is the unified telephone numbering sy
 
 This client provides a simple interface to NANPA's public API endpoints, allowing developers to programmatically access critical numbering plan data and network information.
 
+## Installation
+```bash
+pip install nanpa
+```
+
+or...
+
+```bash
+git clone https://github.com/acidvegas/nanpa
+cd nanpa
+python setup.py install
+```
+
 ## API Documentation
 
 ### State & Area Code Information
@@ -41,3 +54,7 @@ changes = client.get_rate_center_changes(
     '2024-12-31T23:59:59.999-05:00'
 )
 ```
+
+---
+
+###### Mirrors: [acid.vegas](https://git.acid.vegas/nanpa) • [SuperNETs](https://git.supernets.org/acidvegas/nanpa) • [GitHub](https://github.com/acidvegas/nanpa) • [GitLab](https://gitlab.com/acidvegas/nanpa) • [Codeberg](https://codeberg.org/acidvegas/nanpa)
